@@ -244,7 +244,7 @@
     
     <div class="code-container">
       <span class="terminal-icon">$</span>
-      <code id="cmd-add">flatpak remote-add --user --no-gpg-verify gpaint https://fraaaaa4.github.io/gpaint-flatpak</code>
+      <code id="cmd-add">flatpak remote-add --user --gpg-import=gpaint.gpg gpaint https://fraaaaa4.github.io/gpaint-flatpak</code>
       <button class="copy-btn" onclick="copyText(this, 'cmd-add')" title="Copy to clipboard">
         <svg class="copy-icon"><use href="#icon-copy"></use></svg>
         <svg class="check-icon"><use href="#icon-check"></use></svg>
