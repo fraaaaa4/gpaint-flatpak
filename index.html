@@ -242,14 +242,24 @@
     <p>You can download GPaint either from the GPaint official GitHub repository, or you can add it to Flatpak with:</p>
     
     <div class="code-container">
-      <span class="terminal-icon">$</span>
-      <code id="cmd-add">curl -O https://fraaaaa4.github.io/gpaint-flatpak/gpaint.gpg</code>
-      <code id="cmd-add">flatpak remote-add --user --gpg-import=gpaint.gpg gpaint https://fraaaaa4.github.io/gpaint-flatpak</code>
-      <button class="copy-btn" onclick="copyText(this, 'cmd-add')" title="Copy to clipboard">
-        <svg class="copy-icon"><use href="#icon-copy"></use></svg>
-        <svg class="check-icon"><use href="#icon-check"></use></svg>
-      </button>
-    </div>
+          <span class="terminal-icon">$</span>
+          <code id="cmd-gpg">curl -O https://fraaaaa4.github.io/gpaint-flatpak/gpaint.gpg</code>
+          <button class="copy-btn" onclick="copyText(this, 'cmd-gpg')" title="Copy to clipboard">
+            <svg class="copy-icon"><use href="#icon-copy"></use></svg>
+            <svg class="check-icon"><use href="#icon-check"></use></svg>
+          </button>
+        </div>
+
+    <div class="code-container">
+          <span class="terminal-icon">$</span>
+          <code id="cmd-remote">flatpak remote-add --user --gpg-import=gpaint.gpg gpaint https://fraaaaa4.github.
+  io/gpaint-flatpak</code>
+          <button class="copy-btn" onclick="copyText(this, 'cmd-remote')" title="Copy to clipboard">
+            <svg class="copy-icon"><use href="#icon-copy"></use></svg>
+            <svg class="check-icon"><use href="#icon-check"></use></svg>
+          </button>
+        </div>
+    
     <p>Then, to install it:</p>
     <div class="code-container">
       <span class="terminal-icon">$</span>
